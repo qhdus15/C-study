@@ -1,33 +1,28 @@
 #include<iostream>
 using namespace std;
-
 int main()
 {
-	int a, b, c;
+	int a,b,c;
 	cout << "2이상의 원하는 숫자를 입력하세요" << endl;
 	cin >> a;
-
 	
-	for (b = 1; b <= a * 2; b++)//전체행수는 a*2
+	for (b = 1; b <= a * 2; b++) //전체행수는 a*2
 	{
-		for (c = 1; c <= a; c == )//전체열수는a
+		for (c = 1; c <= a; c++) //전체열수는a
 		{
-			if (b % 2 == 0)//짝수행
+			if (b % 2 == 0) //짝수행
 			{
 				if (c % 2 == 0)
-					cout << " "<< endl;//짝수열에 공백찍기
-				else
-					cout << "*" << endl;//홀수열에 별찍기
+					cout << " "; // //짝수열에 공백찍기
+				else cout << "*"; // 홀수열에 별찍기
 			}
-
-			else(b % 2 == 1)//홀수행
+			else //홀수행
 			{
 				if (c % 2 == 0)
-					cout << " " << endl;//짝수열에 공백찍기
-				else
-					cout << "*" << endl;//홀수열에 별찍기
+					cout << "*"; // 짝수열에 별찍기
+				else cout << " "; // 홀수열에 공백찍기
 			}
 		}
+		cout << endl;
 	}
-	return 0;
 }
